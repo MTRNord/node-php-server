@@ -10,7 +10,11 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get -qq update
 RUN apt-get install -y bsdmainutils curl screen
 RUN curl -sL https://deb.nodesource.com/setup_5.x | sudo -E bash -
-RUN sudo apt-get install -y nodejs build-essential
+RUN sudo apt-get install -y nodejs build-essential php
+
+RUN npm install -g strongloop
+
+
 
 RUN useradd --create-home server
 
