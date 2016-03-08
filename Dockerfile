@@ -2,7 +2,8 @@
 #
 # VERSION               0.1
 
-FROM ubuntu:12.04 MAINTAINER Marcel Radzio <info@nordgedanken.de>
+FROM ubuntu:12.04
+MAINTAINER Marcel Radzio <info@nordgedanken.de>
 
 RUN echo "deb http://archive.ubuntu.com/ubuntu precise universe" >> /etc/apt/sources.list
 
