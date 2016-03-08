@@ -11,7 +11,8 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get -qq update
 RUN apt-get install -y bsdmainutils curl screen
 RUN curl -sL https://deb.nodesource.com/setup_5.x | bash -
-RUN apt-get install -y nodejs build-essential php5
+RUN apt-get update
+RUN apt-get install -y nodejs build-essential php5 libavahi-compat-libdnssd-dev
 
 RUN npm install -g strongloop
 
