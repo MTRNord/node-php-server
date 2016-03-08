@@ -17,9 +17,7 @@ RUN apt-get install -y libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqli
 
 RUN wget http://python.org/ftp/python/2.7.11/Python-2.7.11.tgz
 RUN tar -xvf Python-2.7.11.tgz
-RUN cd Python-2.7.11
-RUN ./configure && make && make install && checkinstall
-RUN cd ..
+RUN cd Python-2.7.11 && ./configure && make && make install && checkinstall
 
 RUN npm install -g strongloop
 
