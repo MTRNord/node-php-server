@@ -9,7 +9,7 @@ RUN echo "deb http://archive.ubuntu.com/ubuntu precise universe" >> /etc/apt/sou
 
 ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get -qq update
-RUN apt-get install -y bsdmainutils curl screen
+RUN apt-get install -y bsdmainutils curl screen wget
 RUN curl -sL https://deb.nodesource.com/setup_5.x | bash -
 RUN apt-get update
 RUN apt-get install -y nodejs build-essential checkinstall php5 libavahi-compat-libdnssd-dev
